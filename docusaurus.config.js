@@ -1,30 +1,36 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Mathology Docs',
+  tagline: 'Find setup guides, tips and much more.',
+  url: 'https://docs.mathology.org/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  favicon: 'img/favicon.png',
+  organizationName: 'mathology',
+  projectName: 'mathology-documentation',
   themeConfig: {
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
     navbar: {
-      title: 'My Site',
+      title: 'Mathology Docs',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Mathology Docs',
+        src: 'img/logo.png',
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          href: 'https://www.mathology.org',
+          label: 'Website',
+          position: 'right',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'mailto:hello@mathology.org',
+          label: 'Contact',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/mathology-lms',
           label: 'GitHub',
           position: 'right',
         },
@@ -34,50 +40,75 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Mathology',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Website',
+              href: 'https://www.mathology.org',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Contact',
+              href: 'mailto:hello@mathology.org',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/mathology-lms',
+            },
+          ],
+        },
+        {
+          title: 'Open Source',
+          items: [
+            {
+              label: 'Mathology Server',
+              href: 'https://github.com/mathology-lms/mathology-server',
+            },
+            {
+              label: 'Mathology App',
+              href: 'https://github.com/mathology-lms/mathology-app',
+            },
+            {
+              label: 'Mathology Docs',
+              href: 'https://github.com/mathology-lms/mathology-documentation',
+            },
+          ],
+        },
+        {
+          title: 'App',
+          items: [
+            {
+              label: 'Web',
+              href: '/',
+            },
+            {
+              label: 'iOS',
+              href: '/',
+            },
+            {
+              label: 'Android',
+              href: '/',
+            },
+          ],
+        },
+        {
+          title: 'Legal',
+          items: [
+            {
+              label: 'Privacy',
+              href: '/',
+            },
+            {
+              label: 'Terms',
+              href: '/',
+            },
+            {
+              label: 'Imprint',
+              href: '/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Mathology`,
     },
   },
   presets: [
@@ -86,15 +117,8 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/mathology-lms/mathology-documentation/edit/master/docs/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
