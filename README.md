@@ -1,6 +1,6 @@
 # Mathology Documentation
 
-Documentation is published on https://docs.mathology.org. There you can find install and update instructions as well as tips to correctly setup and maintain your Mathology installation.
+Documentation is published on https://docs.mathology.org. There you can find install and update instructions as well as tips to correctly set up and maintain your Mathology installation.
 
 ## 👤 Mathology
 
