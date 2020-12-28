@@ -119,6 +119,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/mathology-lms/mathology-docs/edit/master/docs/',
+          routeBasePath: '/'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
